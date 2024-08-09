@@ -1,0 +1,323 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+:root{
+    --fonte1: "Righteous", sans-serif;
+    --fonte2: "Kanit", sans-serif;
+    --cor1: #E4E68E;
+    --cor2: #9BE68E;
+    --cor3: #C0E68E;
+    --cor4: #E6DB8E;
+    --cor5: #8EE6A1;
+    --cor6: #D6E6C2;
+
+}  
+*{
+    margin: 0;
+}     
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--cor5);
+    font-weight: 300;
+}
+header{
+    position: relative;
+    text-align: center;
+    padding: 50px;
+    background-color: var(--cor3)
+}
+header img{
+    height: 200px;
+}
+header h1{
+    font-family: var(--fonte1);
+    width: 800px;
+    padding-bottom: 15px;
+    margin: auto;
+    border-bottom: 3px solid black;
+    margin-bottom: 0px;
+}
+header nav{
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+    width: 350px;
+}
+header nav h2{
+    font-family: var(--fonte1);
+    font-weight: 100;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 350px;
+    margin: auto;
+}
+header nav a{
+    padding: 10px;
+    font-family: var(--fonte1);
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    transition-duration: .3s;
+    display: block;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+header nav a:hover{
+    background-color: var(--cor2);
+    border-radius: 20px;
+    transition-duration: .3s;
+}
+header div a{
+    text-decoration: none;
+    color: black;
+}
+header div a h2{
+    font-family: var(--fonte1);
+    font-weight: 100;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    transition-duration: .3s;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+header div a h2:hover{
+    background-color: var(--cor2);
+    border-radius: 10px;
+    text-decoration: underline;
+    transition-duration: .2s;
+}
+main{
+    font-family: var(--fonte2);
+    margin: auto;
+    width: 800px;
+    background-color: var(--cor1);
+    box-shadow: 0px 15px 10px black;
+}
+div.info{
+    display: inline-table;
+    width: 200px;
+
+    border-top: 10px solid rgb(0, 0, 0);
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    margin-inline: 10px;
+    padding: 15px;
+    height: 190px;
+    border-radius: 0px 0px 15px 15px;
+}
+h1{
+    font-family: var(--fonte1);
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+div.info h1{
+    text-align: center;
+}
+div.info p{
+    text-align: justify;
+}
+section#boxes{
+    width: 765px;
+    margin: auto;
+}
+section#artigos{
+    padding-top: 20px;
+    width: 700px;
+    margin: auto;
+}
+section#artigos div#linha-1{
+    height: 240px;
+    position: relative;
+}
+section#artigos div#linha-1 article{
+    width: 460px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 10px ;
+    border: 1px solid black;
+    margin-right: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 20px;
+}
+section#artigos div#linha-1 div.imagem{
+    width: 150px;
+    height: 193px;
+    display: inline-block;
+    background-image: url(imagens/palácio.jpg);
+    background-size: cover;
+    background-position: 20%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+section#artigos div#linha-2{
+    height: 240px;
+    position: relative;
+}
+section#artigos div#linha-2 article{
+    width: 460px;
+    height: 190px;
+    display: inline-block; 
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 20px;
+}
+section#artigos div#linha-2 div.imagem{
+    width: 150px;
+    height: 230px;
+    display: inline-block;
+    background-image: url(imagens/campo.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+section#lista{
+    padding-top: 50px;
+    width: 700px;
+    position: relative;
+    margin: auto;
+
+}
+section#lista ul li{
+    width: 590px;
+    border-radius: 0px 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    border: 1px solid black;
+}
+section#produtos{
+    margin: auto;
+    padding-top: 50px;
+    width: 700px;
+    position: relative;
+}
+section#produtos h1{
+    text-align: center;
+    width: 620px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px;    
+    border-radius: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+section#produtos article{
+    margin: auto;
+    width: 620px;
+    height: 70px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+section#produtos div.imagem{
+    
+}
+section#produtos #produto-1{
+    margin: auto;
+    padding: 20px;
+}
+section#produtos #produto-1 .imagem{
+    background-image: url(imagens/café.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 660px;
+    height: 100px;
+    margin: auto;
+}
+section#produtos #produto-2{
+    margin-top: 30px;
+    padding: 20px;
+}
+section#produtos #produto-2 .imagem{
+    background-image: url(imagens/boi.jpg);
+    background-position: 50%;
+    background-size: cover;
+    width: 660px;
+    height: 100px;
+    margin: auto;
+}
+section#produtos #produto-3{
+    margin-top: 30px;
+    padding: 20px;
+}
+section#produtos #produto-3 .imagem{
+    background-image: url(imagens/soja.jpg);
+    background-position: 50%;
+    background-size: cover;
+    width: 660px;
+    height: 100px;
+    margin: auto;
+}
+section#produtos #produto-4{
+    margin-top: 30px;
+    padding: 20px;
+}
+section#produtos #produto-4 .imagem{
+    background-image: url(imagens/acucar.jpg);
+    background-position: 50%;
+    background-size: cover;
+    width: 660px;
+    height: 100px;
+    margin: auto;
+}
+section#produtos #produto-5{
+    margin-top: 30px;
+    padding: 20px;
+}
+section#produtos #produto-5 .imagem{
+    background-image: url(imagens/milho.jpg);
+    background-position: 50%;
+    background-size: cover;
+    width: 660px;
+    height: 100px;
+    margin: auto;
+}
+section#produtos #produto-6{
+    margin-top: 30px;
+    padding: 20px;
+}
+section#produtos #produto-6 .imagem{
+    background-image: url(imagens/celulose.jpg);
+    background-position: 50%;
+    background-size: cover;
+    width: 660px;
+    height: 100px;
+    margin: auto;
+}
+footer{
+    padding-top: 100px;
+    height: 180px;
+    text-align: center;
+    background-color: var(--cor1);
+}
+footer nav{
+}
+footer nav a{
+    font-family: var(--fonte1);
+    font-size: 1.4em;
+    color: black;
+    text-decoration: none;
+}
+footer nav a:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    transition-duration: .3s;
+}
